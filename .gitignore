@@ -1,3 +1,4 @@
 .idea
 test/_trial_temp*
 test/__pycache__
+main/__pycache__
