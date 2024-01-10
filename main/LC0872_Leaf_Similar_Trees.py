@@ -13,4 +13,10 @@ class Solution:
         self.inorder(root.right, leaves)
 
     def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
-        return True
+        leaves1 = []
+        self.inorder(root1, leaves1)
+
+        leaves2 = []
+        self.inorder(root2, leaves2)
+
+        return leaves1 == leaves2
