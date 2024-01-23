@@ -6,7 +6,7 @@ test = Solution()
 
 
 class SolutionTest(unittest.TestCase):
-  def test(self):
+  def test_maxLength(self):
     self.assertEqual(test.maxLength(["un", "iq", "ue"]), 4)
     self.assertEqual(test.maxLength(["cha", "r", "act", "ers"]), 6)
     self.assertEqual(test.maxLength(["abcdefghijklmnopqrstuvwxyz"]), 26)
