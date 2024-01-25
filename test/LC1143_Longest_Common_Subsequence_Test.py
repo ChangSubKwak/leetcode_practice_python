@@ -6,6 +6,6 @@ class SolutionTest(unittest.TestCase):
 
   def test_numRollsToTarget(self):
     test = Solution()
-    self.assertEqual(test.longestCommonsubsequence("abcde", "ace"), 3)
-    self.assertEqual(test.longestCommonsubsequence("abc", "abc"), 3)
-    self.assertEqual(test.longestCommonsubsequence("abc", "def"), 0)
+    self.assertEqual(test.longestCommonSubsequence("abcde", "ace"), 3)
+    self.assertEqual(test.longestCommonSubsequence("abc", "abc"), 3)
+    self.assertEqual(test.longestCommonSubsequence("abc", "def"), 0)
