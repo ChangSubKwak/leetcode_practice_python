@@ -1,5 +1,3 @@
-import numpy as np
-
 class Solution:
     def recursion(self, m, n, maxMove, y, x, moveCount):
         if moveCount > maxMove:
