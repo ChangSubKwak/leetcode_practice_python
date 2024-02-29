@@ -4,5 +4,13 @@ from main.TreeNode import TreeNode
 
 
 class Solution:
-    def findbottomLeftValue(self, root: Optional[TreeNode]) -> int:
-        return 1
+    def findBottomLeftValue(self, root: 'TreeNode') -> 'int':
+        queue = [root]
+        while queue:
+            node = queue.pop(0)
+            res = node.val
+            if node.right:
+                queue.append(node.right)
+            if node.left:
+                queue.append(node.left)
+        return res
