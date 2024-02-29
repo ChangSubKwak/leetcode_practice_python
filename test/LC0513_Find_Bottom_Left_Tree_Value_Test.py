@@ -20,6 +20,4 @@ class SolutionTest(unittest.TestCase):
         root.right.left = TreeNode(5)
         root.right.right = TreeNode(6)
         root.right.left.left = TreeNode(7)
-
-
-        self.assertEqual(test.findBottomLeftValue(root), 1)
+        self.assertEqual(test.findBottomLeftValue(root), 7)
