@@ -9,3 +9,4 @@ class SolutionTest(unittest.TestCase):
     def test_pivotInteger(self):
         self.assertEqual(test.pivotInteger(8), 6)
         self.assertEqual(test.pivotInteger(1), 1)
+        self.assertEqual(test.pivotInteger(4), -1)
