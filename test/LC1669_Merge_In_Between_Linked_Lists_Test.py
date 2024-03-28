@@ -18,14 +18,20 @@ class SolutionTest(unittest.TestCase):
         list2.next = ListNode(1000001)
         list2.next.next = ListNode(1000002)
 
-        result = ListNode(10)
-        result.next = ListNode(1)
-        result.next.next = ListNode(13)
-        result.next.next.next = ListNode(1000000)
-        result.next.next.next.next = ListNode(1000001)
-        result.next.next.next.next.next = ListNode(1000002)
+        expected = ListNode(10)
+        expected.next = ListNode(1)
+        expected.next.next = ListNode(13)
+        expected.next.next.next = ListNode(1000000)
+        expected.next.next.next.next = ListNode(1000001)
+        expected.next.next.next.next.next = ListNode(1000002)
+        expected.next.next.next.next.next.next = ListNode(5)
 
-        self.assertEqual(Solution.mergeInBetween(list1, 3, 4, list2), result)
+        result = Solution.mergeInBetween(list1, 3, 4, list2)
+
+        while result:
+            self.assertEqual(result.val, expected.val)
+            result = result.next
+            expected = expected.next
 
     def test_mergeInBetween2(self):
         list1 = ListNode(0)
@@ -42,13 +48,20 @@ class SolutionTest(unittest.TestCase):
         list2.next.next.next = ListNode(1000003)
         list2.next.next.next.next = ListNode(1000004)
 
-        result = ListNode(0)
-        result.next = ListNode(1)
-        result.next.next = ListNode(1000000)
-        result.next.next.next = ListNode(1000001)
-        result.next.next.next.next = ListNode(1000002)
-        result.next.next.next.next.next = ListNode(1000003)
-        result.next.next.next.next.next.next = ListNode(1000004)
-        result.next.next.next.next.next.next.next = ListNode(6)
+        expected = ListNode(0)
+        expected.next = ListNode(1)
+        expected.next.next = ListNode(1000000)
+        expected.next.next.next = ListNode(1000001)
+        expected.next.next.next.next = ListNode(1000002)
+        expected.next.next.next.next.next = ListNode(1000003)
+        expected.next.next.next.next.next.next = ListNode(1000004)
+        expected.next.next.next.next.next.next.next = ListNode(6)
 
-        self.assertEqual(Solution.mergeInBetween(list1, 2, 5, list2), result)
+        # self.assertEqual(Solution.mergeInBetween(list1, 2, 5, list2), result)
+
+        result = Solution.mergeInBetween(list1, 2, 5, list2)
+
+        while result:
+            self.assertEqual(result.val, expected.val)
+            result = result.next
+            expected = expected.next
