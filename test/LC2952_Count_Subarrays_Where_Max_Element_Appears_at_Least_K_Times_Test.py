@@ -7,5 +7,5 @@ test = Solution()
 
 class SolutionTest(unittest.TestCase):
     def test_countSubarrays(self):
-        self.assertEqual(test.countSubarrays([1, 3, 2, 3, 3]), 2)
-        self.assertEqual(test.countSubarrays([1, 4, 2, 1]), 3)
+        self.assertEqual(test.countSubarrays([1, 3, 2, 3, 3], 2), 6)
+        self.assertEqual(test.countSubarrays([1, 4, 2, 1], 3), 0)
