@@ -1,6 +1,6 @@
 import unittest
 
-from main.LC0786_Kth_Smallest_Prime_Fracction import Solution
+from main.LC0786_Kth_Smallest_Prime_Fraction import Solution
 
 test = Solution()
 
