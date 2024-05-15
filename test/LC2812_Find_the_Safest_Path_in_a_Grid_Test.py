@@ -6,7 +6,7 @@ test = Solution()
 
 
 class SolutionTest(unittest.TestCase):
-    def test_doubleIt1(self):
+    def test_maximumSafenessFactor(self):
         self.assertEqual(test.maximumSafenessFactor([
             [0, 0, 1],
             [0, 0, 0],
