@@ -8,13 +8,13 @@ class Solution:
         if not root:
             return 0
 
-        sum = 0
-        sum += self.inorder(root.left, low, high)
+        total = 0
+        total += self.inorder(root.left, low, high)
         if low <= root.val <= high:
-            sum += root.val
-        sum += self.inorder(root.right, low, high)
+            total += root.val
+        total += self.inorder(root.right, low, high)
 
-        return sum
+        return total
 
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         return self.inorder(root, low, high)
