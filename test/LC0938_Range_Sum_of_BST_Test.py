@@ -1,12 +1,11 @@
 import unittest
-
 from main.LC0938_Range_Sum_of_BST import Solution
 from main.TreeNode import TreeNode
 
 test = Solution()
 
 
-class TestClass(unittest.TestCase):
+class SolutionTest(unittest.TestCase):
     def test_rangeSumBST(self):
         root = TreeNode(10)
 
