@@ -16,4 +16,4 @@ class SolutionTest(unittest.TestCase):
             ["GROCERY15","ELECTRONICS_50","DISCOUNT10"],
             ["grocery","electronics","invalid"],
             [False, True, True]
-        ), ["ELECTRONICS_50")
+        ), ["ELECTRONICS_50"])
