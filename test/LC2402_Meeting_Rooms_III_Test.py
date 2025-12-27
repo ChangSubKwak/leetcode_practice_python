@@ -1,6 +1,6 @@
 import unittest
 
-from main.LC2402_Meeting_Rooms import Solution
+from main.LC2402_Meeting_Rooms_III import Solution
 
 test = Solution()
 
