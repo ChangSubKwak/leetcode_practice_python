@@ -1,0 +1,5 @@
+from typing import List
+
+class Solution:
+    def minimumAbsDifference(self, arr: List[int]) -> List[List[int]]:
+        return 0
