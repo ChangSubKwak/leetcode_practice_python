@@ -17,7 +17,12 @@ class SolutionTest(unittest.TestCase):
         expected.right = TreeNode(3)
         expected.right.right = TreeNode(4)
 
-        self.assertEqual(test.balanceBST(root), expected)
+        result = test.balanceBST(root)
+
+        self.assertEqual(result.val, expected.val)
+        self.assertEqual(result.left.val, expected.left.val)
+        self.assertEqual(result.right.val, expected.right.val)
+        self.assertEqual(result.right.right.val, expected.right.right.val)
 
     def test_balanceBST2(self):
         root = TreeNode(2)
@@ -28,4 +33,8 @@ class SolutionTest(unittest.TestCase):
         expected.left = TreeNode(1)
         expected.right = TreeNode(3)
 
-        self.assertEqual(test.balanceBST(root), expected)
+        result = test.balanceBST(root)
+
+        self.assertEqual(result.val, expected.val)
+        self.assertEqual(result.left.val, expected.left.val)
+        self.assertEqual(result.right.val, expected.right.val)
