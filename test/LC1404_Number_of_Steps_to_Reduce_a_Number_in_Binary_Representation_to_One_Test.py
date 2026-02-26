@@ -7,8 +7,8 @@ test = Solution()
 class SolutionTest(unittest.TestCase):
     def test_maxScore(self):
         self.assertEqual(test.numSteps("1101"), 6)
-        self.assertEqual(test.maxScore("10"), 1)
-        self.assertEqual(test.maxScore("1"), 0)
+        self.assertEqual(test.numSteps("10"), 1)
+        self.assertEqual(test.numSteps("1"), 0)
 
 
 
